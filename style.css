@@ -1,6 +1,10 @@
 body {
-    background-color : #1C3144;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .container-main {
@@ -16,21 +20,32 @@ body {
   }
 
   .container-title {
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 
-  .container-links {
+    .container-links {
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #fff;
+    }
 
-  }
+    .container-links a {
+        margin-left: 0.5em;
+    }
+
 
   .name {
-    font-size:72px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size:5em;
     color: #fff;
+    margin: 0 0.5em;
   }
 
   .description {
-    font-size:24px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size:1em;
     color: #fff;
   }
 
@@ -44,30 +59,62 @@ body {
       display:flex;
       flex-direction: row;
       width: 100%;
+      justify-content: flex-end;
       margin: 0;
       top:0;
   }
 
-  .menu {
-      list-style: none;
-      display:flex;
-      flex-direction: row;
-      justify-content: center;
-  }
-
-  .menu li {
-      margin-left: 5px;
-      padding: 20px;
-  }
-
-  .menu a {
+  .icon-red {
       text-decoration: none;
       color: #fff;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1em;
+      font-size: 2em;
   }
 
-  .menu a:visited {
-      text-decoration: none;
+  .icon-red i:hover {
+      font-size: 1.5em;
+      transition: 0.7s;
   }
 
+
+  .language {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    height: 100px;
+    align-self: flex-end;
+    position: absolute;
+    top: 30;
+    right: 30;
+  }
+
+  .language .button-language {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .language .button-language:hover {
+    background-color: #fff;
+    color: black;
+    border: none;
+    box-sizing: border-box;
+  }
+
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+  }
+
+    .cv {
+        margin-right: 1.5em;
+        color: #fff;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: baseline;
+    }
