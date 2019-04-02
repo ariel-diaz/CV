@@ -6,6 +6,8 @@
 
       <link rel="stylesheet" href="./style.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
   </head>
   
   <body>
@@ -15,8 +17,8 @@
           </div>
       <section class="container-title">
          <div class="title">
-            <span class="brand"> &lt;/> </span>
-          <h1 class="name"> Ariel Díaz</h1> 
+            <span class="brand wow pulse"> &lt;/> </span>
+          <h1 class="name wow pulse" data-wow-iteration="3" data-wow-duration="0.15" > Ariel Díaz</h1> 
          </div>
          <div class="description">
             <p>I'm web developer, I use Javascript, Angular, React, Node and .NET</p>
@@ -24,14 +26,18 @@
       </section>
       <footer class="footer">
           <div class="container-links"> 
-              <span> Copyright ©2019  </span>  
-              <a  class="icon-red" target="_blank" href="https://www.linkedin.com/in/arielrdiaz/"> <i class="fab fa-linkedin"></i> </a>
-              <a  class="icon-red" target="_blank" href="https://github.com/ariel-diaz/"> <i class="fab fa-github"></i> </a>
+              <span class="wow bounceInLeft"> Copyright ©2019  </span>  
+              <a  class="icon-red wow flipInX" target="_blank" href="https://www.linkedin.com/in/arielrdiaz/"> <i class="fab fa-linkedin"></i> </a>
+              <a  class="icon-red wow flipInX" target="_blank" href="https://github.com/ariel-diaz/"> <i class="fab fa-github"></i> </a>
             </div>
       </footer>
     </div>
 
 
     <script src="index.js" type="text/Javascript"></script>
+    <script src="js/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>
   </body>
   </html>
